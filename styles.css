@@ -49,7 +49,7 @@ header {
   align-items: center;
 }
 .brand img {
-  width: 42px;
+  /* width: 42px; */
   height: 42px;
   border-radius: 8px;
 }
