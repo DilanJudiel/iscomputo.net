@@ -316,3 +316,50 @@ section h2, section h3 {
   }
 }
 
+/* Hacer que las columnas se apilen en móviles */
+.columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.columns .column {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes para pantallas chicas */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #1F3D78;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .navbar.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+/* En pantallas grandes ocultamos el botón hamburguesa */
+.menu-toggle {
+  display: none;
+}

@@ -109,3 +109,11 @@ const observer = new IntersectionObserver(entries => {
 titles.forEach(title => {
   observer.observe(title);
 });
+
+// Menú hamburguesa
+const menuToggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
