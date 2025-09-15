@@ -238,6 +238,10 @@ footer {
   margin: 0 10px;
   transition: color 0.3s;
 }
+
+footer .socials a:hover {
+  color: #FFD700; /* amarillo dorado */
+}
 .whatsapp {
   position: fixed;
   right: 18px;
