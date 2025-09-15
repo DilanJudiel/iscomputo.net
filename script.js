@@ -117,3 +117,17 @@ const navbar = document.querySelector(".navbar");
 menuToggle.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
+
+// Carrusel automático
+let currentIndex = 0;
+const track = document.querySelector(".carousel-track");
+const items = document.querySelectorAll(".carousel-track img");
+const totalItems = items.length;
+
+function moveCarousel() {
+  currentIndex++;
+  if (currentIndex >= totalItems) currentIndex = 0;
+  track.style.transform = `translateX(-${currentIndex * 220}px)`; // 200px ancho + 20px margen
+}
+
+setInterval(moveCarousel, 3000); // cambia cada 3 segundos
